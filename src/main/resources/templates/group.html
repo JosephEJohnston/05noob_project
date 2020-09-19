@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>你好</title>
+        <link rel="stylesheet" href="../static/lib/bootstrap/4.5.0/css/bootstrap.min.css"
+              th:href="@{/lib/bootstrap/4.5.0/css/bootstrap.min.css}">
+        <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+        <link rel="stylesheet" href="../static/css/font.css" th:href="@{/css/font.css}">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="../static/lib/bootstrap/4.5.0/js/bootstrap.min.js"
+                th:src="@{/lib/bootstrap/4.5.0/js/bootstrap.min.js}"></script>
+    </head>
+    <body>
+        <div th:insert="group/_group_fragment :: nav-top"></div>
+
+        <div th:insert="group/_group_fragment :: nav-sec"></div>
+
+        <div class="container">
+            <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                <h4 style="font-weight: bold">我的小组讨论</h4>
+                <div>
+                    <hr>
+                    <div class="row">
+                        <a href="#" th:href="@{/group/topic}" class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 m-link-font">女孩子的读书群</a>
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 m-info-font">8 回应</div>
+                        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 m-info-font">今天 21:19</div>
+                        <a class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 m-link-font" href="#">最近我们读了同一本书</a>
+                    </div>
+                    <hr>
+                </div>
+                <nav class="d-flex justify-content-center">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link text-info" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link text-info" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link text-info" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link text-info" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link text-info" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4"></div>
+        </div>
+    </body>
+</html>

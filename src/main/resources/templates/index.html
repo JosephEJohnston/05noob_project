@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="">
+    <head>
+        <meta charset="UTF-8">
+        <title>你好</title>
+        <link rel="stylesheet" href="../static/lib/bootstrap/4.5.0/css/bootstrap.min.css"
+              th:href="@{/lib/bootstrap/4.5.0/css/bootstrap.min.css}">
+        <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+        <link rel="stylesheet" href="../static/css/font.css" th:href="@{/css/font.css}">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="../static/lib/bootstrap/4.5.0/js/bootstrap.min.js"
+                th:src="@{/lib/bootstrap/4.5.0/js/bootstrap.min.js}"></script>
+    </head>
+    <body>
+        <div th:insert="_fragment :: nav-top"></div>
+
+        <div th:insert="_fragment :: nav-sec"></div>
+
+    </body>
+</html>

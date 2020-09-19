@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>你好</title>
+        <link rel="stylesheet" href="../static/lib/bootstrap/4.5.0/css/bootstrap.min.css"
+              th:href="@{/lib/bootstrap/4.5.0/css/bootstrap.min.css}">
+        <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+        <link rel="stylesheet" href="../static/css/font.css" th:href="@{/css/font.css}">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="../static/lib/bootstrap/4.5.0/js/bootstrap.min.js"
+                th:src="@{/lib/bootstrap/4.5.0/js/bootstrap.min.js}"></script>
+    </head>
+    <body>
+        <div th:insert="_fragment :: nav-top"></div>
+
+        <div th:insert="_fragment :: nav-sec"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                    <!--class="col-7 col-sm-7 col-md-7 col-lg-7 col-xl-7"-->
+                    <!--个人信息-->
+                    <div class="media">
+                        <!--图片-->
+                        <img th:src="@{/img/head.jpg}" src="../static/img/head.jpg" alt="#"
+                             style="width: 48px;height: 48px" class="align-self-start mr-3">
+                        <div class="media-body">
+                            <!--信息-->
+                            <h4 class="mt-0" style="font-weight: bold;"
+                                th:text="${session.user.getUsername()}">Theresia</h4>
+                            <p class="m-media-margin">嘤嘤嘤 <a href="#">(修改)</a></p>
+                            <div class="nav m-main-nav-style">
+                                <a href="#" class="nav-link m-nav-item text-secondary">我的主页</a>
+                                <a href="#" class="nav-link m-nav-item text-secondary">广播</a>
+                                <a href="#" class="nav-link m-nav-item text-secondary">相册</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron jumbotron-fluid m-jumbotron">
+                        <div class="container">
+                            <p class="lead m-p">
+                                这里是你的主页，用来展示你的生活和发现，也是别人认识你的地方。
+                                完善你的个人资料，开始全新的豆瓣之旅吧。</p>
+                        </div>
+                    </div>
+                    <div>我的讨论······</div>
+                </div>
+                <!--占位用-->
+                <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1"></div>
+                <!--右框部分-->
+                <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                    <div>我的广播······</div>
+                    <hr>
+                    <div>我的关注······</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,895 @@
+2020-09-15 19:07:45.877  INFO 10668 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 10668 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 19:07:45.926  INFO 10668 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 19:07:46.064  INFO 10668 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 19:07:46.064  INFO 10668 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 19:07:49.880  INFO 10668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 19:07:49.895  INFO 10668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 19:07:49.990  INFO 10668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2020-09-15 19:07:52.459  INFO 10668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 19:07:52.510  INFO 10668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 19:07:52.511  INFO 10668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 19:07:52.722  INFO 10668 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 19:07:52.722  INFO 10668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6658 ms
+2020-09-15 19:07:56.911  INFO 10668 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 19:07:57.288  INFO 10668 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 19:07:58.118  INFO 10668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 19:07:58.352  INFO 10668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 19:08:01.171  INFO 10668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 19:08:01.173  INFO 10668 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 19:08:01.240  INFO 10668 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 19:08:01.350  INFO 10668 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 19:08:02.026  INFO 10668 --- [restartedMain] com.noob.Application                     : Started Application in 21.829 seconds (JVM running for 34.837)
+2020-09-15 19:09:05.800  INFO 10668 --- [http-nio-8080-exec-2] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:09:05.808  INFO 10668 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 19:09:05.808  INFO 10668 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 19:09:05.820  INFO 10668 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-09-15 19:09:08.155  INFO 10668 --- [http-nio-8080-exec-7] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/register-login', ip='127.0.0.1', classMethod='com.noob.web.TransferController.registersPage', args=[]}
+2020-09-15 19:09:08.160  INFO 10668 --- [http-nio-8080-exec-7] com.noob.aspect.LogAspect                : Result : register-login
+2020-09-15 19:09:13.340  INFO 10668 --- [http-nio-8080-exec-10] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='127.0.0.1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@6bce6d51]}
+2020-09-15 19:09:13.624  INFO 10668 --- [http-nio-8080-exec-10] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 19:09:16.138  INFO 10668 --- [http-nio-8080-exec-10] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 19:09:35.357  INFO 10668 --- [http-nio-8080-exec-3] c.n.i.AuthorizationInterceptor           : token is null
+2020-09-15 19:09:35.370  INFO 10668 --- [http-nio-8080-exec-4] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/register-login', ip='127.0.0.1', classMethod='com.noob.web.TransferController.registersPage', args=[]}
+2020-09-15 19:09:35.371  INFO 10668 --- [http-nio-8080-exec-4] com.noob.aspect.LogAspect                : Result : register-login
+2020-09-15 19:10:32.124  INFO 10668 --- [http-nio-8080-exec-8] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='127.0.0.1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=, password=, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@e433baa]}
+2020-09-15 19:10:32.179  INFO 10668 --- [http-nio-8080-exec-8] com.noob.aspect.LogAspect                : Result : ModelAndView [view="error/error"; model=null]
+2020-09-15 19:12:20.620  INFO 14236 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 14236 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 19:12:20.628  INFO 14236 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 19:12:20.703  INFO 14236 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 19:12:20.703  INFO 14236 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 19:12:21.817  INFO 14236 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 19:12:21.820  INFO 14236 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 19:12:21.846  INFO 14236 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-09-15 19:12:22.818  INFO 14236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 19:12:22.829  INFO 14236 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 19:12:22.829  INFO 14236 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 19:12:22.964  INFO 14236 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 19:12:22.965  INFO 14236 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2262 ms
+2020-09-15 19:12:24.274  INFO 14236 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 19:12:24.457  INFO 14236 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 19:12:24.522  INFO 14236 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 19:12:24.560  INFO 14236 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 19:12:24.974  INFO 14236 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 19:12:24.975  INFO 14236 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 19:12:24.992  INFO 14236 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 19:12:25.020  INFO 14236 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 19:12:25.194  INFO 14236 --- [restartedMain] com.noob.Application                     : Started Application in 5.521 seconds (JVM running for 7.409)
+2020-09-15 19:12:56.070  INFO 14236 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:12:56.079  INFO 14236 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 19:12:56.079  INFO 14236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 19:12:56.095  INFO 14236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-09-15 19:12:56.125  INFO 14236 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/register-login', ip='0:0:0:0:0:0:0:1', classMethod='com.noob.web.TransferController.registersPage', args=[]}
+2020-09-15 19:12:56.131  INFO 14236 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : register-login
+2020-09-15 19:13:05.340  INFO 14236 --- [http-nio-8080-exec-10] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/registers', ip='0:0:0:0:0:0:0:1', classMethod='com.noob.web.RegisterController.register', args=[User(id=null, username=Cynthia, password=123456, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@5c719cea]}
+2020-09-15 19:13:05.392  INFO 14236 --- [http-nio-8080-exec-10] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 19:13:07.199  INFO 14236 --- [http-nio-8080-exec-10] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=null, username=Cynthia, password=123456, createDate=1600168385595, modifyDate=1600168385595)}]
+2020-09-15 19:24:40.282  INFO 14592 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 14592 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 19:24:40.287  INFO 14592 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 19:24:40.362  INFO 14592 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 19:24:40.363  INFO 14592 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 19:24:41.676  INFO 14592 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 19:24:41.678  INFO 14592 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 19:24:41.709  INFO 14592 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2020-09-15 19:24:42.741  INFO 14592 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 19:24:42.751  INFO 14592 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 19:24:42.752  INFO 14592 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 19:24:42.872  INFO 14592 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 19:24:42.872  INFO 14592 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2509 ms
+2020-09-15 19:24:44.112  INFO 14592 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 19:24:44.319  INFO 14592 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 19:24:44.384  INFO 14592 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 19:24:44.422  INFO 14592 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 19:24:44.841  INFO 14592 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 19:24:44.842  INFO 14592 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 19:24:44.859  INFO 14592 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 19:24:44.887  INFO 14592 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 19:24:45.078  INFO 14592 --- [restartedMain] com.noob.Application                     : Started Application in 5.555 seconds (JVM running for 7.229)
+2020-09-15 19:24:56.034  INFO 14592 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:24:56.041  INFO 14592 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 19:24:56.041  INFO 14592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 19:24:56.056  INFO 14592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-09-15 19:24:59.088  INFO 14592 --- [http-nio-8080-exec-7] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/register-login', ip='0:0:0:0:0:0:0:1', classMethod='com.noob.web.TransferController.registersPage', args=[]}
+2020-09-15 19:24:59.093  INFO 14592 --- [http-nio-8080-exec-7] com.noob.aspect.LogAspect                : Result : register-login
+2020-09-15 19:25:05.522  INFO 14592 --- [http-nio-8080-exec-5] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@43e5c26e]}
+2020-09-15 19:25:05.595  INFO 14592 --- [http-nio-8080-exec-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 19:25:07.424  INFO 14592 --- [http-nio-8080-exec-5] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 19:28:12.090  INFO 8000 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 8000 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 19:28:12.095  INFO 8000 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 19:28:12.163  INFO 8000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 19:28:12.163  INFO 8000 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 19:28:13.331  INFO 8000 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 19:28:13.333  INFO 8000 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 19:28:13.360  INFO 8000 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2020-09-15 19:28:14.245  INFO 8000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 19:28:14.258  INFO 8000 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 19:28:14.258  INFO 8000 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 19:28:14.383  INFO 8000 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 19:28:14.384  INFO 8000 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2219 ms
+2020-09-15 19:28:15.634  INFO 8000 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 19:28:15.815  INFO 8000 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 19:28:15.880  INFO 8000 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 19:28:15.920  INFO 8000 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 19:28:16.314  INFO 8000 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 19:28:16.315  INFO 8000 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 19:28:16.331  INFO 8000 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 19:28:16.359  INFO 8000 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 19:28:16.534  INFO 8000 --- [restartedMain] com.noob.Application                     : Started Application in 5.353 seconds (JVM running for 7.121)
+2020-09-15 19:28:24.566  INFO 8000 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:28:24.573  INFO 8000 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 19:28:24.573  INFO 8000 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 19:28:24.588  INFO 8000 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-09-15 19:28:26.117  INFO 8000 --- [http-nio-8080-exec-6] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/register-login', ip='0:0:0:0:0:0:0:1', classMethod='com.noob.web.TransferController.registersPage', args=[]}
+2020-09-15 19:28:26.121  INFO 8000 --- [http-nio-8080-exec-6] com.noob.aspect.LogAspect                : Result : register-login
+2020-09-15 19:28:29.314  INFO 8000 --- [http-nio-8080-exec-5] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@78b014c0]}
+2020-09-15 19:28:29.381  INFO 8000 --- [http-nio-8080-exec-5] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 19:28:31.090  INFO 8000 --- [http-nio-8080-exec-5] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 19:32:27.080  INFO 12696 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 12696 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 19:32:27.083  INFO 12696 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 19:32:27.151  INFO 12696 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 19:32:27.152  INFO 12696 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 19:32:28.377  INFO 12696 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 19:32:28.379  INFO 12696 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 19:32:28.410  INFO 12696 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2020-09-15 19:32:29.363  INFO 12696 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 19:32:29.372  INFO 12696 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 19:32:29.373  INFO 12696 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 19:32:29.495  INFO 12696 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 19:32:29.496  INFO 12696 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2342 ms
+2020-09-15 19:32:30.803  INFO 12696 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 19:32:31.022  INFO 12696 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 19:32:31.094  INFO 12696 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 19:32:31.131  INFO 12696 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 19:32:31.567  INFO 12696 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 19:32:31.568  INFO 12696 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 19:32:31.585  INFO 12696 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 19:32:31.613  INFO 12696 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 19:32:31.803  INFO 12696 --- [restartedMain] com.noob.Application                     : Started Application in 5.519 seconds (JVM running for 7.443)
+2020-09-15 19:32:38.104  INFO 12696 --- [http-nio-8080-exec-5] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:32:38.112  INFO 12696 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 19:32:38.112  INFO 12696 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 19:32:38.124  INFO 12696 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-09-15 19:32:41.298  INFO 12696 --- [http-nio-8080-exec-7] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@58127019]}
+2020-09-15 19:32:41.368  INFO 12696 --- [http-nio-8080-exec-7] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 19:32:42.943  INFO 12696 --- [http-nio-8080-exec-7] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 19:35:07.485  INFO 8684 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 8684 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 19:35:07.488  INFO 8684 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 19:35:07.545  INFO 8684 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 19:35:07.545  INFO 8684 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 19:35:08.681  INFO 8684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 19:35:08.684  INFO 8684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 19:35:08.713  INFO 8684 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2020-09-15 19:35:09.665  INFO 8684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 19:35:09.674  INFO 8684 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 19:35:09.674  INFO 8684 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 19:35:09.798  INFO 8684 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 19:35:09.798  INFO 8684 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2253 ms
+2020-09-15 19:35:11.075  INFO 8684 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 19:35:11.256  INFO 8684 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 19:35:11.322  INFO 8684 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 19:35:11.363  INFO 8684 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 19:35:11.783  INFO 8684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 19:35:11.785  INFO 8684 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 19:35:11.802  INFO 8684 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 19:35:11.832  INFO 8684 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 19:35:12.006  INFO 8684 --- [restartedMain] com.noob.Application                     : Started Application in 5.341 seconds (JVM running for 7.203)
+2020-09-15 19:35:15.029  INFO 8684 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:35:15.029  INFO 8684 --- [http-nio-8080-exec-4] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:35:15.029  INFO 8684 --- [http-nio-8080-exec-3] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:35:15.029  INFO 8684 --- [http-nio-8080-exec-2] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:35:15.029  INFO 8684 --- [http-nio-8080-exec-5] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:35:15.035  INFO 8684 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 19:35:15.035  INFO 8684 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 19:35:15.046  INFO 8684 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-09-15 19:35:18.043  INFO 8684 --- [http-nio-8080-exec-7] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@fe8f993]}
+2020-09-15 19:35:18.116  INFO 8684 --- [http-nio-8080-exec-7] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 19:35:19.700  INFO 8684 --- [http-nio-8080-exec-7] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 19:36:05.284  INFO 12992 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 12992 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 19:36:05.288  INFO 12992 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 19:36:05.369  INFO 12992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 19:36:05.370  INFO 12992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 19:36:06.671  INFO 12992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 19:36:06.673  INFO 12992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 19:36:06.700  INFO 12992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-09-15 19:36:07.666  INFO 12992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 19:36:07.677  INFO 12992 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 19:36:07.678  INFO 12992 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 19:36:07.804  INFO 12992 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 19:36:07.804  INFO 12992 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2434 ms
+2020-09-15 19:36:09.111  INFO 12992 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 19:36:09.297  INFO 12992 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 19:36:09.363  INFO 12992 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 19:36:09.401  INFO 12992 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 19:36:09.798  INFO 12992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 19:36:09.799  INFO 12992 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 19:36:09.816  INFO 12992 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 19:36:09.842  INFO 12992 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 19:36:10.007  INFO 12992 --- [restartedMain] com.noob.Application                     : Started Application in 5.626 seconds (JVM running for 7.509)
+2020-09-15 19:36:14.812  INFO 12992 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:36:14.821  INFO 12992 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 19:36:14.821  INFO 12992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 19:36:14.833  INFO 12992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-09-15 19:36:14.884  INFO 12992 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@4caebd35]}
+2020-09-15 19:36:14.950  INFO 12992 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 19:36:16.504  INFO 12992 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 19:36:44.695  INFO 11944 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 11944 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 19:36:44.698  INFO 11944 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 19:36:44.772  INFO 11944 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 19:36:44.772  INFO 11944 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 19:36:45.853  INFO 11944 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 19:36:45.856  INFO 11944 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 19:36:45.883  INFO 11944 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-09-15 19:36:46.802  INFO 11944 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 19:36:46.814  INFO 11944 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 19:36:46.815  INFO 11944 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 19:36:46.954  INFO 11944 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 19:36:46.954  INFO 11944 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2182 ms
+2020-09-15 19:36:48.199  INFO 11944 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 19:36:48.404  INFO 11944 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 19:36:48.475  INFO 11944 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 19:36:48.516  INFO 11944 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 19:36:48.943  INFO 11944 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 19:36:48.944  INFO 11944 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 19:36:48.962  INFO 11944 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 19:36:48.992  INFO 11944 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 19:36:49.178  INFO 11944 --- [restartedMain] com.noob.Application                     : Started Application in 5.258 seconds (JVM running for 7.07)
+2020-09-15 19:36:51.776  INFO 11944 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:36:51.784  INFO 11944 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 19:36:51.784  INFO 11944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 19:36:51.799  INFO 11944 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-09-15 19:36:51.852  INFO 11944 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@54ae2662]}
+2020-09-15 19:36:51.925  INFO 11944 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 19:36:53.479  INFO 11944 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 19:38:16.946  INFO 9584 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 9584 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 19:38:16.951  INFO 9584 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 19:38:17.027  INFO 9584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 19:38:17.027  INFO 9584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 19:38:18.349  INFO 9584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 19:38:18.351  INFO 9584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 19:38:18.384  INFO 9584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2020-09-15 19:38:19.472  INFO 9584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 19:38:19.482  INFO 9584 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 19:38:19.483  INFO 9584 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 19:38:19.656  INFO 9584 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 19:38:19.657  INFO 9584 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2630 ms
+2020-09-15 19:38:21.007  INFO 9584 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 19:38:21.189  INFO 9584 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 19:38:21.255  INFO 9584 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 19:38:21.295  INFO 9584 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 19:38:21.728  INFO 9584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 19:38:21.729  INFO 9584 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 19:38:21.747  INFO 9584 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 19:38:21.776  INFO 9584 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 19:38:21.999  INFO 9584 --- [restartedMain] com.noob.Application                     : Started Application in 5.853 seconds (JVM running for 7.635)
+2020-09-15 19:38:34.940  INFO 9584 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:38:34.948  INFO 9584 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 19:38:34.949  INFO 9584 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 19:38:34.963  INFO 9584 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-09-15 19:38:35.013  INFO 9584 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@7754f4bc]}
+2020-09-15 19:38:35.084  INFO 9584 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 19:38:36.674  INFO 9584 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 19:40:03.682  INFO 15452 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 15452 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 19:40:03.685  INFO 15452 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 19:40:03.752  INFO 15452 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 19:40:03.752  INFO 15452 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 19:40:04.752  INFO 15452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 19:40:04.754  INFO 15452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 19:40:04.782  INFO 15452 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2020-09-15 19:40:05.693  INFO 15452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 19:40:05.704  INFO 15452 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 19:40:05.704  INFO 15452 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 19:40:05.833  INFO 15452 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 19:40:05.833  INFO 15452 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2081 ms
+2020-09-15 19:40:07.219  INFO 15452 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 19:40:07.429  INFO 15452 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 19:40:07.509  INFO 15452 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 19:40:07.559  INFO 15452 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 19:40:07.992  INFO 15452 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 19:40:07.994  INFO 15452 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 19:40:08.011  INFO 15452 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 19:40:08.040  INFO 15452 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 19:40:08.226  INFO 15452 --- [restartedMain] com.noob.Application                     : Started Application in 5.391 seconds (JVM running for 7.343)
+2020-09-15 19:40:12.573  INFO 15452 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:40:12.581  INFO 15452 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 19:40:12.582  INFO 15452 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 19:40:12.595  INFO 15452 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2020-09-15 19:40:12.646  INFO 15452 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@1f76a8ca]}
+2020-09-15 19:40:12.716  INFO 15452 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 19:40:14.331  INFO 15452 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 19:41:38.648  INFO 12608 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 12608 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 19:41:38.652  INFO 12608 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 19:41:38.738  INFO 12608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 19:41:38.739  INFO 12608 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 19:41:40.272  INFO 12608 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 19:41:40.274  INFO 12608 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 19:41:40.308  INFO 12608 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19ms. Found 0 Redis repository interfaces.
+2020-09-15 19:41:41.374  INFO 12608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 19:41:41.383  INFO 12608 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 19:41:41.384  INFO 12608 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 19:41:41.517  INFO 12608 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 19:41:41.518  INFO 12608 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2778 ms
+2020-09-15 19:41:42.963  INFO 12608 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 19:41:43.187  INFO 12608 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 19:41:43.258  INFO 12608 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 19:41:43.305  INFO 12608 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 19:41:43.777  INFO 12608 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 19:41:43.778  INFO 12608 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 19:41:43.798  INFO 12608 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 19:41:43.828  INFO 12608 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 19:41:44.059  INFO 12608 --- [restartedMain] com.noob.Application                     : Started Application in 6.417 seconds (JVM running for 8.403)
+2020-09-15 19:41:53.114  INFO 12608 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:41:53.162  INFO 12608 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 19:41:53.162  INFO 12608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 19:41:53.176  INFO 12608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-09-15 19:41:53.229  INFO 12608 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@7754f4bc]}
+2020-09-15 19:41:53.300  INFO 12608 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 19:41:54.874  INFO 12608 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 19:43:59.404  INFO 10552 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 10552 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 19:43:59.409  INFO 10552 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 19:43:59.486  INFO 10552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 19:43:59.486  INFO 10552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 19:44:00.573  INFO 10552 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 19:44:00.576  INFO 10552 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 19:44:00.604  INFO 10552 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2020-09-15 19:44:01.510  INFO 10552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 19:44:01.521  INFO 10552 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 19:44:01.521  INFO 10552 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 19:44:01.647  INFO 10552 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 19:44:01.648  INFO 10552 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2162 ms
+2020-09-15 19:44:02.901  INFO 10552 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 19:44:03.111  INFO 10552 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 19:44:03.177  INFO 10552 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 19:44:03.217  INFO 10552 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 19:44:03.648  INFO 10552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 19:44:03.649  INFO 10552 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 19:44:03.665  INFO 10552 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 19:44:03.695  INFO 10552 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 19:44:03.869  INFO 10552 --- [restartedMain] com.noob.Application                     : Started Application in 5.284 seconds (JVM running for 6.98)
+2020-09-15 19:44:09.311  INFO 10552 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:44:09.318  INFO 10552 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 19:44:09.318  INFO 10552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 19:44:09.334  INFO 10552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-09-15 19:44:09.388  INFO 10552 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='127.0.0.1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@4caebd35]}
+2020-09-15 19:44:09.458  INFO 10552 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 19:44:11.006  INFO 10552 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 19:44:45.286  INFO 15436 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 15436 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 19:44:45.289  INFO 15436 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 19:44:45.345  INFO 15436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 19:44:45.345  INFO 15436 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 19:44:46.369  INFO 15436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 19:44:46.371  INFO 15436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 19:44:46.398  INFO 15436 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2020-09-15 19:44:47.463  INFO 15436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 19:44:47.473  INFO 15436 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 19:44:47.474  INFO 15436 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 19:44:47.637  INFO 15436 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 19:44:47.637  INFO 15436 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2291 ms
+2020-09-15 19:44:49.111  INFO 15436 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 19:44:49.363  INFO 15436 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 19:44:49.432  INFO 15436 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 19:44:49.473  INFO 15436 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 19:44:49.978  INFO 15436 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 19:44:49.980  INFO 15436 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 19:44:49.997  INFO 15436 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 19:44:50.027  INFO 15436 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 19:44:50.222  INFO 15436 --- [restartedMain] com.noob.Application                     : Started Application in 5.683 seconds (JVM running for 7.343)
+2020-09-15 19:44:51.395  INFO 15436 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:44:51.406  INFO 15436 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 19:44:51.407  INFO 15436 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 19:44:51.423  INFO 15436 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-09-15 19:44:51.489  INFO 15436 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='127.0.0.1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@7e12c0a9]}
+2020-09-15 19:44:51.582  INFO 15436 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 19:44:53.205  INFO 15436 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 19:45:32.128  INFO 15436 --- [http-nio-8080-exec-7] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='127.0.0.1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@7e12c0a9]}
+2020-09-15 19:45:32.139  INFO 15436 --- [http-nio-8080-exec-7] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 19:45:46.132  INFO 6724 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 6724 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 19:45:46.135  INFO 6724 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 19:45:46.192  INFO 6724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 19:45:46.193  INFO 6724 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 19:45:47.271  INFO 6724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 19:45:47.273  INFO 6724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 19:45:47.300  INFO 6724 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-09-15 19:45:48.194  INFO 6724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 19:45:48.205  INFO 6724 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 19:45:48.205  INFO 6724 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 19:45:48.370  INFO 6724 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 19:45:48.370  INFO 6724 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2177 ms
+2020-09-15 19:45:49.577  INFO 6724 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 19:45:49.763  INFO 6724 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 19:45:49.829  INFO 6724 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 19:45:49.865  INFO 6724 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 19:45:50.285  INFO 6724 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 19:45:50.287  INFO 6724 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 19:45:50.304  INFO 6724 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 19:45:50.333  INFO 6724 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 19:45:50.516  INFO 6724 --- [restartedMain] com.noob.Application                     : Started Application in 5.174 seconds (JVM running for 6.881)
+2020-09-15 19:45:53.456  INFO 6724 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:45:53.463  INFO 6724 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 19:45:53.463  INFO 6724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 19:45:53.479  INFO 6724 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-09-15 19:45:53.530  INFO 6724 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='127.0.0.1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@2fbc52cf]}
+2020-09-15 19:45:53.602  INFO 6724 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 19:45:55.205  INFO 6724 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 19:50:17.982  INFO 12584 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 12584 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 19:50:17.987  INFO 12584 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 19:50:18.100  INFO 12584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 19:50:18.102  INFO 12584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 19:50:19.343  INFO 12584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 19:50:19.345  INFO 12584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 19:50:19.371  INFO 12584 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-09-15 19:50:20.241  INFO 12584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 19:50:20.251  INFO 12584 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 19:50:20.251  INFO 12584 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 19:50:20.374  INFO 12584 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 19:50:20.374  INFO 12584 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2272 ms
+2020-09-15 19:50:21.637  INFO 12584 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 19:50:21.860  INFO 12584 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 19:50:21.993  INFO 12584 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 19:50:22.046  INFO 12584 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 19:50:22.572  INFO 12584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 19:50:22.574  INFO 12584 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 19:50:22.602  INFO 12584 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 19:50:22.639  INFO 12584 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 19:50:22.862  INFO 12584 --- [restartedMain] com.noob.Application                     : Started Application in 5.684 seconds (JVM running for 7.428)
+2020-09-15 19:50:27.075  INFO 12584 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:50:27.083  INFO 12584 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 19:50:27.083  INFO 12584 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 19:50:27.099  INFO 12584 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-09-15 19:50:27.150  INFO 12584 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='127.0.0.1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@5664299b]}
+2020-09-15 19:50:27.223  INFO 12584 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 19:50:28.778  INFO 12584 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 19:52:08.093  INFO 15400 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 15400 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 19:52:08.097  INFO 15400 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 19:52:08.165  INFO 15400 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 19:52:08.165  INFO 15400 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 19:52:09.171  INFO 15400 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 19:52:09.174  INFO 15400 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 19:52:09.200  INFO 15400 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2020-09-15 19:52:10.062  INFO 15400 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 19:52:10.072  INFO 15400 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 19:52:10.072  INFO 15400 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 19:52:10.195  INFO 15400 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 19:52:10.195  INFO 15400 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2030 ms
+2020-09-15 19:52:11.443  INFO 15400 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 19:52:11.625  INFO 15400 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 19:52:11.692  INFO 15400 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 19:52:11.728  INFO 15400 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 19:52:12.172  INFO 15400 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 19:52:12.173  INFO 15400 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 19:52:12.190  INFO 15400 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 19:52:12.220  INFO 15400 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 19:52:12.401  INFO 15400 --- [restartedMain] com.noob.Application                     : Started Application in 5.07 seconds (JVM running for 6.68)
+2020-09-15 19:52:17.321  INFO 15400 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:52:17.330  INFO 15400 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 19:52:17.330  INFO 15400 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 19:52:17.347  INFO 15400 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-09-15 19:52:17.400  INFO 15400 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='127.0.0.1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@7d508d92]}
+2020-09-15 19:52:17.469  INFO 15400 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 19:52:19.018  INFO 15400 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 19:54:21.243  INFO 420 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 420 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 19:54:21.248  INFO 420 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 19:54:21.319  INFO 420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 19:54:21.320  INFO 420 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 19:54:22.406  INFO 420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 19:54:22.408  INFO 420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 19:54:22.435  INFO 420 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2020-09-15 19:54:23.366  INFO 420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 19:54:23.376  INFO 420 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 19:54:23.377  INFO 420 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 19:54:23.503  INFO 420 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 19:54:23.504  INFO 420 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2184 ms
+2020-09-15 19:54:24.844  INFO 420 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 19:54:25.071  INFO 420 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 19:54:25.157  INFO 420 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 19:54:25.195  INFO 420 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 19:54:25.631  INFO 420 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 19:54:25.632  INFO 420 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 19:54:25.649  INFO 420 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 19:54:25.680  INFO 420 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 19:54:25.864  INFO 420 --- [restartedMain] com.noob.Application                     : Started Application in 5.404 seconds (JVM running for 7.165)
+2020-09-15 19:54:34.632  INFO 420 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 19:54:34.632  INFO 420 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 19:54:34.646  INFO 420 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2020-09-15 19:54:41.384  INFO 420 --- [http-nio-8080-exec-4] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:54:41.417  INFO 420 --- [http-nio-8080-exec-4] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='127.0.0.1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@50260256]}
+2020-09-15 19:54:41.491  INFO 420 --- [http-nio-8080-exec-4] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 19:54:43.094  INFO 420 --- [http-nio-8080-exec-4] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 19:58:15.956  INFO 9468 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 9468 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 19:58:15.960  INFO 9468 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 19:58:16.039  INFO 9468 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 19:58:16.039  INFO 9468 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 19:58:17.439  INFO 9468 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 19:58:17.441  INFO 9468 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 19:58:17.471  INFO 9468 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2020-09-15 19:58:18.524  INFO 9468 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 19:58:18.534  INFO 9468 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 19:58:18.535  INFO 9468 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 19:58:18.671  INFO 9468 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 19:58:18.671  INFO 9468 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2632 ms
+2020-09-15 19:58:20.004  INFO 9468 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 19:58:20.246  INFO 9468 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 19:58:20.330  INFO 9468 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 19:58:20.386  INFO 9468 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 19:58:20.867  INFO 9468 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 19:58:20.868  INFO 9468 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 19:58:20.886  INFO 9468 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 19:58:20.916  INFO 9468 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 19:58:21.124  INFO 9468 --- [restartedMain] com.noob.Application                     : Started Application in 5.965 seconds (JVM running for 7.672)
+2020-09-15 19:58:25.851  INFO 9468 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:58:25.859  INFO 9468 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 19:58:25.859  INFO 9468 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 19:58:25.874  INFO 9468 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-09-15 19:58:25.932  INFO 9468 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='127.0.0.1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@7ade45bf]}
+2020-09-15 19:58:26.003  INFO 9468 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 19:58:27.558  INFO 9468 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 19:58:59.240  INFO 9516 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 9516 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 19:58:59.244  INFO 9516 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 19:58:59.298  INFO 9516 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 19:58:59.298  INFO 9516 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 19:59:00.298  INFO 9516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 19:59:00.301  INFO 9516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 19:59:00.327  INFO 9516 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-09-15 19:59:01.221  INFO 9516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 19:59:01.230  INFO 9516 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 19:59:01.231  INFO 9516 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 19:59:01.356  INFO 9516 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 19:59:01.357  INFO 9516 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2059 ms
+2020-09-15 19:59:02.599  INFO 9516 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 19:59:02.773  INFO 9516 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 19:59:02.841  INFO 9516 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 19:59:02.887  INFO 9516 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 19:59:03.331  INFO 9516 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 19:59:03.333  INFO 9516 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 19:59:03.354  INFO 9516 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 19:59:03.385  INFO 9516 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 19:59:03.594  INFO 9516 --- [restartedMain] com.noob.Application                     : Started Application in 5.056 seconds (JVM running for 6.644)
+2020-09-15 19:59:08.228  INFO 9516 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 19:59:08.236  INFO 9516 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 19:59:08.237  INFO 9516 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 19:59:08.254  INFO 9516 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-09-15 19:59:08.311  INFO 9516 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='127.0.0.1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@9332e52]}
+2020-09-15 19:59:08.383  INFO 9516 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 19:59:09.944  INFO 9516 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 20:01:15.712  INFO 13624 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 13624 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 20:01:15.716  INFO 13624 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 20:01:15.792  INFO 13624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 20:01:15.792  INFO 13624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 20:01:16.912  INFO 13624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 20:01:16.914  INFO 13624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 20:01:16.946  INFO 13624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 16ms. Found 0 Redis repository interfaces.
+2020-09-15 20:01:17.890  INFO 13624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 20:01:17.900  INFO 13624 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 20:01:17.900  INFO 13624 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 20:01:18.033  INFO 13624 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 20:01:18.033  INFO 13624 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2240 ms
+2020-09-15 20:01:19.312  INFO 13624 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 20:01:19.548  INFO 13624 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 20:01:19.615  INFO 13624 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 20:01:19.655  INFO 13624 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 20:01:20.070  INFO 13624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 20:01:20.072  INFO 13624 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 20:01:20.088  INFO 13624 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 20:01:20.115  INFO 13624 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 20:01:20.293  INFO 13624 --- [restartedMain] com.noob.Application                     : Started Application in 5.474 seconds (JVM running for 7.227)
+2020-09-15 20:01:38.850  INFO 13624 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 20:01:38.859  INFO 13624 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 20:01:38.860  INFO 13624 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 20:01:38.875  INFO 13624 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-09-15 20:01:38.929  INFO 13624 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='127.0.0.1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@7d508d92]}
+2020-09-15 20:01:38.998  INFO 13624 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 20:01:40.580  INFO 13624 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 20:02:13.241  INFO 15888 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 15888 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 20:02:13.245  INFO 15888 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 20:02:13.315  INFO 15888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 20:02:13.315  INFO 15888 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 20:02:14.506  INFO 15888 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 20:02:14.508  INFO 15888 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 20:02:14.541  INFO 15888 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 Redis repository interfaces.
+2020-09-15 20:02:15.426  INFO 15888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 20:02:15.435  INFO 15888 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 20:02:15.435  INFO 15888 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 20:02:15.559  INFO 15888 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 20:02:15.559  INFO 15888 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2243 ms
+2020-09-15 20:02:16.785  INFO 15888 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 20:02:16.973  INFO 15888 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 20:02:17.037  INFO 15888 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 20:02:17.075  INFO 15888 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 20:02:17.476  INFO 15888 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 20:02:17.478  INFO 15888 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 20:02:17.494  INFO 15888 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 20:02:17.521  INFO 15888 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 20:02:17.687  INFO 15888 --- [restartedMain] com.noob.Application                     : Started Application in 5.301 seconds (JVM running for 6.968)
+2020-09-15 20:02:21.510  INFO 15888 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 20:02:21.518  INFO 15888 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 20:02:21.518  INFO 15888 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 20:02:21.534  INFO 15888 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-09-15 20:02:21.587  INFO 15888 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='127.0.0.1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@1a160a8c]}
+2020-09-15 20:02:21.659  INFO 15888 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 20:02:23.212  INFO 15888 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 20:03:37.521  INFO 15400 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 15400 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 20:03:37.525  INFO 15400 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 20:03:37.581  INFO 15400 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 20:03:37.581  INFO 15400 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 20:03:38.706  INFO 15400 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 20:03:38.708  INFO 15400 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 20:03:38.736  INFO 15400 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-09-15 20:03:39.703  INFO 15400 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 20:03:39.713  INFO 15400 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 20:03:39.713  INFO 15400 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 20:03:39.833  INFO 15400 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 20:03:39.834  INFO 15400 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2253 ms
+2020-09-15 20:03:41.052  INFO 15400 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 20:03:41.230  INFO 15400 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 20:03:41.291  INFO 15400 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 20:03:41.326  INFO 15400 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 20:03:41.717  INFO 15400 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 20:03:41.719  INFO 15400 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 20:03:41.734  INFO 15400 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 20:03:41.761  INFO 15400 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 20:03:41.923  INFO 15400 --- [restartedMain] com.noob.Application                     : Started Application in 5.135 seconds (JVM running for 6.845)
+2020-09-15 20:03:46.321  INFO 15400 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 20:03:46.328  INFO 15400 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 20:03:46.328  INFO 15400 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 20:03:46.344  INFO 15400 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-09-15 20:03:46.397  INFO 15400 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='127.0.0.1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@327fe5c2]}
+2020-09-15 20:03:46.466  INFO 15400 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 20:03:47.992  INFO 15400 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 20:04:45.863  INFO 3592 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 3592 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 20:04:45.867  INFO 3592 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 20:04:45.923  INFO 3592 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 20:04:45.924  INFO 3592 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 20:04:46.832  INFO 3592 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 20:04:46.834  INFO 3592 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 20:04:46.860  INFO 3592 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-09-15 20:04:47.682  INFO 3592 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 20:04:47.782  INFO 3592 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 20:04:47.782  INFO 3592 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 20:04:47.899  INFO 3592 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 20:04:47.900  INFO 3592 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1976 ms
+2020-09-15 20:04:49.031  INFO 3592 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 20:04:49.217  INFO 3592 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 20:04:49.280  INFO 3592 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 20:04:49.316  INFO 3592 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 20:04:49.705  INFO 3592 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 20:04:49.706  INFO 3592 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 20:04:49.723  INFO 3592 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 20:04:49.750  INFO 3592 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 20:04:49.918  INFO 3592 --- [restartedMain] com.noob.Application                     : Started Application in 4.759 seconds (JVM running for 6.39)
+2020-09-15 20:04:55.663  INFO 3592 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 20:04:55.670  INFO 3592 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 20:04:55.670  INFO 3592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 20:04:55.685  INFO 3592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-09-15 20:04:55.735  INFO 3592 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='127.0.0.1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@7b245bbd]}
+2020-09-15 20:04:55.801  INFO 3592 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 20:04:57.368  INFO 3592 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 20:06:43.667  INFO 15688 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 15688 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 20:06:43.670  INFO 15688 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 20:06:43.721  INFO 15688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 20:06:43.721  INFO 15688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 20:06:44.715  INFO 15688 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 20:06:44.718  INFO 15688 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 20:06:44.744  INFO 15688 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-09-15 20:06:45.616  INFO 15688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 20:06:45.626  INFO 15688 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 20:06:45.626  INFO 15688 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 20:06:45.753  INFO 15688 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 20:06:45.753  INFO 15688 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2031 ms
+2020-09-15 20:06:46.927  INFO 15688 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 20:06:47.101  INFO 15688 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 20:06:47.166  INFO 15688 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 20:06:47.203  INFO 15688 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 20:06:47.598  INFO 15688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 20:06:47.599  INFO 15688 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 20:06:47.615  INFO 15688 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 20:06:47.643  INFO 15688 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 20:06:47.816  INFO 15688 --- [restartedMain] com.noob.Application                     : Started Application in 4.883 seconds (JVM running for 6.634)
+2020-09-15 20:06:51.107  INFO 15688 --- [http-nio-8080-exec-2] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 20:06:51.114  INFO 15688 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 20:06:51.114  INFO 15688 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 20:06:51.131  INFO 15688 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-09-15 20:06:51.184  INFO 15688 --- [http-nio-8080-exec-2] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='127.0.0.1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@2fbc52cf]}
+2020-09-15 20:06:51.257  INFO 15688 --- [http-nio-8080-exec-2] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 20:06:52.809  INFO 15688 --- [http-nio-8080-exec-2] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 20:07:34.836  INFO 5276 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 5276 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 20:07:34.840  INFO 5276 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 20:07:34.898  INFO 5276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 20:07:34.898  INFO 5276 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 20:07:36.006  INFO 5276 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 20:07:36.008  INFO 5276 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 20:07:36.034  INFO 5276 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-09-15 20:07:36.978  INFO 5276 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 20:07:36.988  INFO 5276 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 20:07:36.988  INFO 5276 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 20:07:37.109  INFO 5276 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 20:07:37.110  INFO 5276 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2211 ms
+2020-09-15 20:07:38.301  INFO 5276 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 20:07:38.478  INFO 5276 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 20:07:38.542  INFO 5276 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 20:07:38.578  INFO 5276 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 20:07:38.989  INFO 5276 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 20:07:38.990  INFO 5276 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 20:07:39.006  INFO 5276 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 20:07:39.033  INFO 5276 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 20:07:39.198  INFO 5276 --- [restartedMain] com.noob.Application                     : Started Application in 5.128 seconds (JVM running for 6.825)
+2020-09-15 20:07:42.161  INFO 5276 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 20:07:42.168  INFO 5276 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 20:07:42.168  INFO 5276 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 20:07:42.184  INFO 5276 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-09-15 20:07:42.241  INFO 5276 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='127.0.0.1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@697e5afc]}
+2020-09-15 20:07:42.310  INFO 5276 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 20:07:43.804  INFO 5276 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 20:08:17.984  INFO 13052 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 13052 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 20:08:17.987  INFO 13052 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 20:08:18.043  INFO 13052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 20:08:18.043  INFO 13052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 20:08:19.045  INFO 13052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 20:08:19.047  INFO 13052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 20:08:19.072  INFO 13052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-09-15 20:08:19.943  INFO 13052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 20:08:19.953  INFO 13052 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 20:08:19.953  INFO 13052 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 20:08:20.081  INFO 13052 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 20:08:20.082  INFO 13052 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2038 ms
+2020-09-15 20:08:21.268  INFO 13052 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 20:08:21.454  INFO 13052 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 20:08:21.518  INFO 13052 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 20:08:21.555  INFO 13052 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 20:08:21.963  INFO 13052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 20:08:21.965  INFO 13052 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 20:08:21.981  INFO 13052 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 20:08:22.008  INFO 13052 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 20:08:22.173  INFO 13052 --- [restartedMain] com.noob.Application                     : Started Application in 4.934 seconds (JVM running for 6.7)
+2020-09-15 20:08:25.785  INFO 13052 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 20:08:25.795  INFO 13052 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 20:08:25.795  INFO 13052 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 20:08:25.811  INFO 13052 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-09-15 20:08:25.862  INFO 13052 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='127.0.0.1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@58a51f6e]}
+2020-09-15 20:08:25.928  INFO 13052 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 20:08:27.459  INFO 13052 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 20:12:57.548  INFO 16344 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 16344 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 20:12:57.552  INFO 16344 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 20:12:57.613  INFO 16344 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 20:12:57.613  INFO 16344 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 20:12:58.612  INFO 16344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 20:12:58.614  INFO 16344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 20:12:58.640  INFO 16344 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-09-15 20:12:59.524  INFO 16344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 20:12:59.534  INFO 16344 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 20:12:59.535  INFO 16344 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 20:12:59.657  INFO 16344 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 20:12:59.658  INFO 16344 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2045 ms
+2020-09-15 20:13:00.877  INFO 16344 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 20:13:01.055  INFO 16344 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 20:13:01.119  INFO 16344 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 20:13:01.158  INFO 16344 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 20:13:01.567  INFO 16344 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 20:13:01.568  INFO 16344 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 20:13:01.583  INFO 16344 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 20:13:01.610  INFO 16344 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 20:13:01.774  INFO 16344 --- [restartedMain] com.noob.Application                     : Started Application in 4.944 seconds (JVM running for 6.695)
+2020-09-15 20:13:06.674  INFO 16344 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 20:13:06.681  INFO 16344 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 20:13:06.681  INFO 16344 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 20:13:06.698  INFO 16344 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-09-15 20:13:06.750  INFO 16344 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='127.0.0.1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@3f54465d]}
+2020-09-15 20:13:06.819  INFO 16344 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 20:13:08.307  INFO 16344 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 20:16:29.667  INFO 5220 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 5220 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 20:16:29.671  INFO 5220 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 20:16:29.730  INFO 5220 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 20:16:29.730  INFO 5220 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 20:16:30.845  INFO 5220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 20:16:30.848  INFO 5220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 20:16:30.876  INFO 5220 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13ms. Found 0 Redis repository interfaces.
+2020-09-15 20:16:31.750  INFO 5220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 20:16:31.759  INFO 5220 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 20:16:31.759  INFO 5220 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 20:16:31.945  INFO 5220 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 20:16:31.945  INFO 5220 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2215 ms
+2020-09-15 20:16:33.268  INFO 5220 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 20:16:33.453  INFO 5220 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 20:16:33.522  INFO 5220 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 20:16:33.558  INFO 5220 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 20:16:33.959  INFO 5220 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 20:16:33.961  INFO 5220 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 20:16:33.980  INFO 5220 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 20:16:34.009  INFO 5220 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 20:16:34.204  INFO 5220 --- [restartedMain] com.noob.Application                     : Started Application in 5.374 seconds (JVM running for 7.115)
+2020-09-15 20:16:42.061  INFO 5220 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 20:16:42.068  INFO 5220 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 20:16:42.068  INFO 5220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 20:16:42.083  INFO 5220 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-09-15 20:16:42.139  INFO 5220 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@d6d8c55]}
+2020-09-15 20:16:42.219  INFO 5220 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 20:16:43.852  INFO 5220 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 20:17:34.048  INFO 2992 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 2992 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 20:17:34.050  INFO 2992 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 20:17:34.103  INFO 2992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 20:17:34.103  INFO 2992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 20:17:35.430  INFO 2992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 20:17:35.432  INFO 2992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 20:17:35.458  INFO 2992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 Redis repository interfaces.
+2020-09-15 20:17:36.355  INFO 2992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 20:17:36.365  INFO 2992 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 20:17:36.366  INFO 2992 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 20:17:36.490  INFO 2992 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 20:17:36.490  INFO 2992 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2387 ms
+2020-09-15 20:17:37.753  INFO 2992 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 20:17:37.941  INFO 2992 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 20:17:38.009  INFO 2992 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 20:17:38.045  INFO 2992 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 20:17:38.432  INFO 2992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 20:17:38.433  INFO 2992 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 20:17:38.450  INFO 2992 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 20:17:38.477  INFO 2992 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 20:17:38.651  INFO 2992 --- [restartedMain] com.noob.Application                     : Started Application in 5.317 seconds (JVM running for 6.941)
+2020-09-15 20:17:41.655  INFO 2992 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 20:17:41.662  INFO 2992 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 20:17:41.662  INFO 2992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 20:17:41.678  INFO 2992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-09-15 20:17:41.727  INFO 2992 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@d6d8c55]}
+2020-09-15 20:17:41.793  INFO 2992 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 20:17:43.313  INFO 2992 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 20:20:32.798  INFO 2992 --- [http-nio-8080-exec-5] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@d6d8c55]}
+2020-09-15 20:20:32.810  INFO 2992 --- [http-nio-8080-exec-5] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]
+2020-09-15 20:21:05.415  INFO 15688 --- [restartedMain] com.noob.Application                     : Starting Application on DESKTOP-84FHS72 with PID 15688 (D:\Users\asus\IdeaProjects\05noob_project\target\classes started by asus in D:\Users\asus\IdeaProjects\05noob_project)
+2020-09-15 20:21:05.419  INFO 15688 --- [restartedMain] com.noob.Application                     : No active profile set, falling back to default profiles: default
+2020-09-15 20:21:05.494  INFO 15688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-09-15 20:21:05.494  INFO 15688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-09-15 20:21:06.648  INFO 15688 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-09-15 20:21:06.650  INFO 15688 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-09-15 20:21:06.693  INFO 15688 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 24ms. Found 0 Redis repository interfaces.
+2020-09-15 20:21:07.638  INFO 15688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2020-09-15 20:21:07.648  INFO 15688 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-09-15 20:21:07.648  INFO 15688 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-09-15 20:21:07.772  INFO 15688 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-09-15 20:21:07.773  INFO 15688 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2277 ms
+2020-09-15 20:21:08.984  INFO 15688 --- [restartedMain] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-09-15 20:21:09.197  INFO 15688 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-09-15 20:21:09.293  INFO 15688 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2020-09-15 20:21:09.336  INFO 15688 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2020-09-15 20:21:09.822  INFO 15688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2020-09-15 20:21:09.824  INFO 15688 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-09-15 20:21:09.840  INFO 15688 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-09-15 20:21:09.870  INFO 15688 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-09-15 20:21:10.058  INFO 15688 --- [restartedMain] com.noob.Application                     : Started Application in 5.5 seconds (JVM running for 7.243)
+2020-09-15 20:21:11.027  INFO 15688 --- [http-nio-8080-exec-1] o.apache.tomcat.util.http.parser.Cookie  : A cookie header was received [1598411844; _ga=GA1.1.1442996528.1598381296] that contained an invalid cookie. That cookie will be ignored.
+ Note: further occurrences of this error will be logged at DEBUG level.
+2020-09-15 20:21:11.035  INFO 15688 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-09-15 20:21:11.036  INFO 15688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-09-15 20:21:11.051  INFO 15688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-09-15 20:21:11.115  INFO 15688 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Request : {url='http://localhost:8080/loginInfo', ip='0:0:0:0:0:0:0:1', classMethod='com.noob.web.LoginController.login', args=[User(id=null, username=noob, password=123, createDate=null, modifyDate=null), org.apache.catalina.connector.ResponseFacade@25ed72eb]}
+2020-09-15 20:21:11.203  INFO 15688 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2020-09-15 20:21:12.907  INFO 15688 --- [http-nio-8080-exec-1] com.noob.aspect.LogAspect                : Result : ModelAndView [view="/main"; model={user=User(id=1, username=noob, password=123, createDate=null, modifyDate=null)}]

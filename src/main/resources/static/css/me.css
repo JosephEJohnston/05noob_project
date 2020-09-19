@@ -1,0 +1,118 @@
+
+.m-padding {
+    padding: 0.3em !important;
+}
+
+.m-function-font {
+    font-size: 13px !important;
+}
+
+.m-margin-top {
+    margin-top: 30px !important;
+}
+
+.m-btn-margin-left {
+  margin-left: 4px;
+}
+
+.m-margin-left {
+    margin-left: 10px;
+}
+
+.m-p-font {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.m-time-font {
+    color: rgb(0, 119, 34);
+    font-size: 15px;
+}
+
+.m-info-font {
+    color: rgb(102, 102, 102);
+    font-size: 14px;
+}
+
+.m-link-font {
+    color: rgb(51, 119,170);
+    font-size: 14px;
+}
+
+.m-nav-top-item {
+    width: 48px;
+    height: 28px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+
+.m-item-padding {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+.m-dropdown-menu-size {
+    width: 90px !important;
+    height: 162px !important;
+}
+
+.m-font-small {
+    font-size: 12px !important;
+}
+
+.m-nav-font {
+    font-size: 16px;
+}
+
+.m-p {
+    font-size: 14px;
+    padding-top: 8px;
+}
+
+.m-jumbotron {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+    padding: 8px 20px !important;
+}
+
+.m-nav-item {
+    padding: 0 !important;
+    margin-right: 15px !important;
+}
+
+.m-main-nav-style {
+    margin-top: 5px !important;
+    font-size: 13px !important;
+}
+
+.m-media-margin {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    font-size: 13px !important;
+}
+
+.m-bg-green {
+    background-color: #42bd56 !important;
+}
+
+.m-container-small {
+    max-width: 60em !important;
+    margin: auto !important;
+}
+
+.m-padded-massive {
+    padding-top: 5em !important;
+    padding-bottom: 5em !important;
+}
+
+.m-navbar-small {
+    height: 28px !important;
+    font-size: 12px !important;
+}
+
+.m-navbar-large {
+    height: 74px !important;
+    font-size: 12px !important;
+}
