@@ -20,10 +20,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                    <!--文章主体-->
                     <div>
                         <h4 style="font-weight: bold">女孩子的读书群</h4>
                         <div class="media">
-                            <img th:src="@{/img/head.jpg}" src="../static/img/head.jpg" alt="#"
+                            <img th:src="@{/img/head.jpg}" src="../../static/img/head.jpg" alt="#"
                                  style="width: 48px;height: 48px" class="align-self-start mr-3 m-margin-left">
                             <div class="media-body">
                             <span class="m-info-font m-margin-left">来自:
@@ -44,23 +45,166 @@
                                     m-function-font m-padding m-btn-margin-left">
                                         <span class="glyphicon glyphicon-thumbs-up"></span>
                                         赞
+                                        <span>4</span>
                                     </button>
                                     <button type="button" class="btn btn-outline-success
                                     m-function-font m-padding m-btn-margin-left">
                                         <span class="glyphicon glyphicon-bookmark"></span>
                                         收藏
+                                        <span>3</span>
                                     </button>
                                     <button type="button" class="btn btn-outline-success
                                     m-function-font m-padding m-btn-margin-left">
-                                        转发
-                                        <span class="glyphicon glyphicon-share"></span>
+                                        <a class="text-success" href="#">转发</a>
+                                        <a class="text-success" href="#"><span class="glyphicon glyphicon-share"></span></a>
                                     </button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!--评论部分-->
                     <div>
+                        <!--顶部导航栏-->
+                        <div class="m-margin-top" id="tab">
+                            <a class="m-link-font m-function-font m-padding-nav-item m-margin-nav-item"
+                               href="#respond" data-toggle="tab">回应</a>
+                            <a class="m-link-font m-function-font m-padding-nav-item m-margin-nav-item"
+                               href="#forward" data-toggle="tab">转发</a>
+                            <a class="m-link-font m-function-font m-padding-nav-item m-margin-nav-item"
+                               href="#like" data-toggle="tab">赞</a>
+                            <a class="m-link-font m-function-font m-padding-nav-item m-margin-nav-item"
+                               href="#collect" data-toggle="tab">收藏</a>
+                            <a class="m-link-font m-function-font float-right m-padding-nav-item m-margin-nav-item"
+                               href="#">只看楼主</a>
+                            <hr style="margin-top: 5px">
+                        </div>
+
+                        <div class="">
+                            <div id="respond"class="m-tabpane">
+                                <!--评论部分-->
+                                <div>
+                                    <div class="media">
+                                        <!--图片-->
+                                        <img th:src="@{/img/head.jpg}" src="../../static/img/head.jpg" alt="#"
+                                             style="width: 48px;height: 48px" class="align-self-start mr-3">
+                                        <div class="media-body">
+                                            <div class="m-function-font m-media-bg">
+                                                <a class="m-link-font m-function-font" href="#">初鱼</a>
+                                                <span>(人生不卖惨，越过越圆满)</span>
+                                                <span>2020-09-12 23:43:14</span>
+                                            </div>
+                                            <p class="m-p m-margin-top-small">
+                                                我来了！
+                                            </p>
+                                            <div class="m-margin-top-small">
+                                                <span class="m-info-font m-function-font">来自 豆瓣App</span>
+                                                <span class="m-info-font m-function-font float-right m-margin-left">回应</span>
+                                                <span class="m-info-font m-function-font float-right m-margin-left">赞</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <nav class="d-flex justify-content-center m-font-small">
+                                        <ul class="pagination">
+                                            <li class="page-item">
+                                                <a class="page-link text-info" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link text-info" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link text-info" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link text-info" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link text-info" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+
+                                <!--回复框部分-->
+                                <div class="container" style="margin-bottom: 20px">
+                                    <h5>你的回复</h5>
+                                    <textarea name="" id="" class="border" style="width: 100%; height: 124px; margin-top: 10px"></textarea>
+                                    <button type="button" class="btn btn-light float-right
+                                border-secondary m-margin-top-tiny m-info-font m-padding-nav-item">
+                                        发送
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div id="forward" style="display: none"  class="m-tabpane">
+                                <div class="media">
+                                    <img th:src="@{/img/head.jpg}" src="../../static/img/head.jpg" alt="#"
+                                         style="width: 24px;height: 24px" class="">
+                                    <div class="media-body">
+                                        <a href="#" class="m-link-font m-function-font m-margin-left">Theresia</a>
+                                        <span class="m-info-font m-function-font">转发了这篇评论</span>
+                                        <span class="float-right m-info-font m-function-font">2020-09-20 11:54:35</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="media">
+                                    <img th:src="@{/img/head.jpg}" src="../../static/img/head.jpg" alt="#"
+                                         style="width: 24px;height: 24px" class="">
+                                    <div class="media-body">
+                                        <a href="#" class="m-link-font m-function-font m-margin-left">Theresia</a>
+                                        <span class="m-info-font m-function-font">转发了这篇评论</span>
+                                        <span class="float-right m-info-font m-function-font">2020-09-20 11:54:35</span>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div id="like" style="display: none"  class="m-tabpane">
+                                <div class="media">
+                                    <img th:src="@{/img/head.jpg}" src="../../static/img/head.jpg" alt="#"
+                                         style="width: 24px;height: 24px" class="">
+                                    <div class="media-body">
+                                        <a href="#" class="m-link-font m-function-font m-margin-left">Theresia</a>
+                                        <span class="m-info-font m-function-font">赞了这篇讨论</span>
+                                        <span class="float-right m-info-font m-function-font">2020-09-20 11:54:35</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="media">
+                                    <img th:src="@{/img/head.jpg}" src="../../static/img/head.jpg" alt="#"
+                                         style="width: 24px;height: 24px" class="">
+                                    <div class="media-body">
+                                        <a href="#" class="m-link-font m-function-font m-margin-left">Theresia</a>
+                                        <span class="m-info-font m-function-font">赞了这篇讨论</span>
+                                        <span class="float-right m-info-font m-function-font">2020-09-20 11:54:35</span>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+
+                            <div id="collect" style="display: none"  class="m-tabpane">
+                                <div class="media">
+                                    <img th:src="@{/img/head.jpg}" src="../../static/img/head.jpg" alt="#"
+                                         style="width: 24px;height: 24px" class="">
+                                    <div class="media-body">
+                                        <a href="#" class="m-link-font m-function-font m-margin-left">Theresia</a>
+                                        <span class="m-info-font m-function-font">收藏到豆列</span>
+                                        <a href="#" class="m-link-font m-function-font">精灵儿的蘑菇屋</a>
+                                        <span class="float-right m-info-font m-function-font">2020-09-20 11:54:35</span>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="media">
+                                    <img th:src="@{/img/head.jpg}" src="../../static/img/head.jpg" alt="#"
+                                         style="width: 24px;height: 24px" class="">
+                                    <div class="media-body">
+                                        <a href="#" class="m-link-font m-function-font m-margin-left">Theresia</a>
+                                        <span class="m-info-font m-function-font">收藏到豆列</span>
+                                        <a href="#" class="m-link-font m-function-font">精灵儿的蘑菇屋</a>
+                                        <span class="float-right m-info-font m-function-font">2020-09-20 11:54:35</span>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
@@ -70,7 +214,7 @@
 
                 <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
                     <div class="media">
-                        <img th:src="@{/img/head.jpg}" src="../static/img/head.jpg" alt="#"
+                        <img th:src="@{/img/head.jpg}" src="../../static/img/head.jpg" alt="#"
                              style="width: 48px;height: 48px" class="align-self-start mr-3">
                         <div class="media-body">
                             <a class="m-link-font" href="#">最近我们读了同一本书</a>
@@ -78,8 +222,54 @@
                         </div>
                     </div>
                     <hr>
+
+                    <div>
+                        <div style="margin-bottom: 10px">
+                            <span style="font-size: 16px; font-weight: 100">最新讨论</span>
+                            (<a href="#" class="m-link-font m-function-font"> 更多 </a>)
+                        </div>
+                        <div>
+                            <a href="#" class="m-link-font m-function-font">求推书</a>
+                            <span class="m-info-font m-function-font">(Asylum)</span>
+                            <hr style="margin-top: 3px; margin-bottom: 0">
+                        </div>
+                        <div>
+                            <a href="#" class="m-link-font m-function-font">乌合之众</a>
+                            <span class="m-info-font m-function-font">(且听风吟)</span>
+                            <hr style="margin-top: 3px; margin-bottom: 0">
+                        </div>
+                        <div>
+                            <a href="#" class="m-link-font m-function-font">求推荐一本马克思主义的书</a>
+                            <span class="m-info-font m-function-font">(年方二八)</span>
+                            <hr style="margin-top: 3px; margin-bottom: 0">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <hr style="margin-bottom: 20px">
+
+        <!-- tab 切换 -->
+        <script>
+            // 选取 id 为 tab 的标签内的所有 a 标签，选取所有 class 中带有 m-tabpane 的标签
+            const a = document.querySelectorAll('#tab a'),
+                div = document.querySelectorAll('.m-tabpane');
+
+            for (let i = 0; i < a.length; i++) {
+                let tmp = i;
+                a[i].onclick = function () {
+                    // 将此标签以外的所有标签样式置为 none，且去除 active
+                    for (let j = 0; j < div.length; j++) {
+                        div[j].style.display = 'none';
+                        a[j].classList.remove('active');
+                    }
+                    // 将此标签样式置为 block（显示），且添加 active
+                    div[tmp].style.display = 'block';
+                    this.classList.add('active');
+                }
+            }
+
+        </script>
     </body>
 </html>

@@ -19,4 +19,9 @@ public class GroupController {
     public String topic() {
         return "group/topic";
     }
+
+    @GetMapping("/explore")
+    public String explore() {
+        return "group/explore";
+    }
 }

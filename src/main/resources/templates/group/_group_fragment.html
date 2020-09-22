@@ -28,6 +28,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">音乐</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">同城</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" th:href="@{/group}">小组</a>
+                    </li>
                 </ul>
             </div>
 
@@ -63,7 +69,7 @@
         <nav th:fragment="nav-sec" class="navbar navbar-expand-lg navbar-light bg-light m-navbar-large"
              style="margin-bottom: 50px">
             <div class="container">
-                <a class="navbar-brand" href="#">豆瓣小组</a>
+                <a class="navbar-brand font-weight-bold text-info" href="#" th:href="@{/group}" style="font-size: 28px !important;">豆瓣小组</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
                         aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -72,23 +78,25 @@
                 <div class="collapse navbar-collapse" id="navbarToggler">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0 m-nav-font">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">我的小组</a>
+                            <a class="nav-link text-info" href="#" th:href="@{/group}">我的小组</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">精选</a>
+                            <a class="nav-link text-info" href="#" th:href="@{/group/explore}">精选</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">文化</a>
+                            <a class="nav-link text-info" href="#">文化</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">行摄</a>
+                            <a class="nav-link text-info" href="#">行摄</a>
                         </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
+                    <form action="" class="form-inline my-2 my-lg-0">
                         <label>
-                            <input class="form-control mr-sm-2" type="search" placeholder="小组、话题">
+                            <input class="form-control mr-sm-2 m-font-small" type="search" placeholder="小组、话题">
                         </label>
-                        <span class="glyphicon glyphicon-search"></span>
+                        <button type="button" class="btn btn-light" style="margin-left: 0 !important;">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
                     </form>
                 </div>
             </div>

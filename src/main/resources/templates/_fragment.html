@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="">
     <head>
         <meta charset="UTF-8">
         <title>fragment</title>
@@ -11,8 +11,62 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
         <script src="../static/lib/bootstrap/4.5.0/js/bootstrap.min.js"
                 th:src="@{/lib/bootstrap/4.5.0/js/bootstrap.min.js}"></script>
+        <style>
+            ul{
+                padding: 0;
+            }
+        </style>
     </head>
     <body>
+        <!--<div th:fragment="nav-top" class="m-nav-bg-color" style="height: 28px" >
+            <div>
+                <ul style="padding: 0">
+                    <li class="m-nav-li" style="margin-left: 12px">
+                        <a class="m-nav-item" href="#">豆瓣</a>
+                    </li>
+                    <li class="m-nav-li">
+                        <a class="m-nav-item" href="#">读书</a>
+                    </li>
+                    <li class="m-nav-li">
+                        <a class="m-nav-item" href="#">电影</a>
+                    </li>
+                    <li class="m-nav-li">
+                        <a class="m-nav-item" href="#">音乐</a>
+                    </li>
+                    <li class="m-nav-li">
+                        <a class="m-nav-item" href="#">同城</a>
+                    </li>
+                    <li class="m-nav-li">
+                        <a class="m-nav-item" href="#" th:href="@{/group}">小组</a>
+                    </li>
+
+                    <li class="m-nav-li dropdown" th:if="${session.user != null}"
+                        style="">
+                        <a class="m-nav-item dropdown-toggle" href="#" id="dropdownMenuLink"
+                           data-toggle="dropdown" style="font-size: 12px !important;">
+                            <th:block th:text="${session.user.getUsername()}"></th:block>
+                            的账号
+                        </a>
+                        <div class="dropdown-menu m-dropdown-menu-size" aria-labelledby="dropdownMenuLink"
+                             style="font-size: 12px !important; min-width: 50px !important; height: 162px !important;">
+                            <a class="dropdown-item m-item-padding" href="#">个人主页</a>
+                            <a class="dropdown-item m-item-padding" href="#">我的订单</a>
+                            <a class="dropdown-item m-item-padding" href="#">我的钱包</a>
+                            <a class="dropdown-item m-item-padding" href="#">账号管理</a>
+                            <a class="dropdown-item m-item-padding" href="#">退出</a>
+                        </div>
+                    </li>
+                    <li class="m-nav-li" style="width: 64px;" th:if="${session.user == null}">
+                        <a class="m-nav-item" href="#" th:href="@{/passport}">登录/注册</a>
+                    </li>
+                    <li class="m-nav-li">
+                        <a class="m-nav-item" href="#">提醒</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>-->
         <nav th:fragment="nav-top" class="navbar navbar-expand navbar-dark bg-dark m-navbar-small" style="padding: 0 0;">
             <div class="navbar-collapse">
                 <ul class="navbar-nav">
@@ -47,7 +101,7 @@
                     </li>
                     <li class="nav-item dropdown" th:if="${session.user != null}">
                         <!--<a class="nav-link btn btn-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink"-->
-                           <!--data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                        <!--data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
                         <a class="nav-link btn btn-dark dropdown-toggle" href="#" id="dropdownMenuLink"
                            data-toggle="dropdown" style="font-size: 12px !important;">
                             <th:block th:text="${session.user.getUsername()}"></th:block>
